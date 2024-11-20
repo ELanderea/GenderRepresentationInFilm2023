@@ -1,6 +1,6 @@
 import requests
 import mysql.connector
-from config import db_config, auth
+from config import db_config, tmdb_auth
 
 # Connect to MySQL database
 try:
@@ -31,7 +31,7 @@ base_url = "https://api.themoviedb.org/3/discover/movie?include_adult=false&incl
 
 headers = {
     "accept": "application/json",
-    "Authorization": f"{auth}"
+    "Authorization": f"{tmdb_auth}"
 }
 
 movies_collected = 0
