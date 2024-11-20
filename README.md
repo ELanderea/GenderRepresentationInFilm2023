@@ -174,19 +174,91 @@ Despite this imbalance, films directed by women tend to:
 - **TMDB API** for movie data retrieval
 
 ## How to Run
-#### 1. Clone the repository:
-   ```bash
-   git clone https://github.com/your-username/project-name.git
+Follow these steps to set up and run the project:
+
+###  1. Clone the Repository
+Clone the project repository to your local machine:
+
+```bash
+git clone https://github.com/your-username/project-name.git
 ```
-#### 2. Install dependencies:
-  ```bash
-Copy code
+
+###  2. Install Dependencies
+Install the required dependencies listed in requirements.txt:
+
+```bash
 pip install -r requirements.txt
 ```
-#### 3. Run the analysis:
+###  3. Input Your API key
+Go to `config.py` and update the TMDB API key or Authorisation Token (whichever you prefer) to your own version.
+N.B. The Bechdel API does not require an API key.
+
+###  4. Run the Scripts in Order
+The scripts must be executed in the following order to ensure the data pipeline runs smoothly:
+
+a. Run main.py
+This script orchestrates the data retrieval process and ensures the required movie IDs are collected:
+
 ```bash
-Copy code
-python scripts/data_analysis.py
+python main.py
 ```
+
+b. Run ids.py
+This script retrieves raw IMDb IDs for the top 250 films:
+
+```bash
+python ids.py
+```
+
+c. Run ids_clean.py
+This script cleans and standardises the IMDb IDs for further use:
+
+```bash
+python ids_clean.py
+```
+
+d. Run bechdel.py
+This script fetches the Bechdel Test scores using the cleaned IMDb IDs:
+
+```bash
+python bechdel.py
+```
+
+e. Run composers.py
+This script retrieves composer information for each film:
+
+```bash
+python composers.py
+```
+
+f. Run directors.py
+This script retrieves director information for each film:
+
+```bash
+python directors.py
+```
+
+g. Run tests.py
+This script validates the consistency of the collected data across APIs:
+
+```bash
+python tests.py
+```
+
+### 5. Perform Analysis and Visualisation
+After completing all data retrieval and validation steps, run data.py to analyse the data and generate visualisations:
+
+```bash
+python data.py
+```
+
 ## License
-This project is licensed under the MIT License. See the LICENSE file for details.
+Copyright (c) 2023 Emer Landers
+
+All rights reserved.
+
+Permission is hereby granted for viewing and exploring this project for educational or informational purposes only. 
+Any other use, including but not limited to reproduction, modification, distribution, or commercial use of any content 
+within this project, is strictly prohibited without prior written consent from the owner.
+
+For permissions or inquiries, contact: ELanderea
