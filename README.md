@@ -101,7 +101,7 @@ This is supplemented by the use of `ids.py`, `ids_clean.py`, `composers.py` and 
 ## Key Findings
 
 ### Director Gender Distribution
-![Director Gender Distribution](visuals/director_gender_distribution.png)- 
+![Director Gender Distribution](visualisations/1_GenderDistribution_Dirs.png)- 
   -**Director Gender Distribution:**
   - Male:        84.62%
   - Female:      15.38%
@@ -110,7 +110,7 @@ The distribution of Director gender appears to be particularly skewed in favour 
 That would suggest that despite a number of recent high-profile success stories, the overall picture is still lacking in terms of representation.
 
 ### Composer Gender Distribution
-![Composer Gender Distribution](visuals/composer_gender_distribution.png)
+![Composer Gender Distribution](visualisations/2_GenderDistribution.png)
 - **Composer Gender Distribution:**
   - Male:        84.50%
   - Female:      4.23%
@@ -121,7 +121,7 @@ There is a very similar distribution of gender amongst composers here, though th
 There is also a significant amount of "Unknown" genders acccounted for here, which highlights a need for more thorough data collection moving forward.
 
 ### Composer Gender Distribution
-![Composer Gender Distribution](visuals/composer_gender_distribution.png)
+![Composer Gender Distribution](visualisations/3_Composers_MaleDirs.png)
 - **Composer Gender Distribution in Films with a Male Director:**
   - Male:        85.48%
   - Unknown:     9.68%
@@ -131,7 +131,7 @@ There is also a significant amount of "Unknown" genders acccounted for here, whi
 In films directed by males, the gender of the Composer attached to the project was most likely to be male. The percentage of male composers is higher than their representation of in the total amount of composers accounted for in this study. 
 
 ### Composer Gender Distribution
-![Composer Gender Distribution](visuals/composer_gender_distribution.png)
+![Composer Gender Distribution](visualisations/4_Composers_FemaleDirs.png)
 - **Composer Gender Distribution in Films with a Female Director:**
   - Male:        77.78%
   - Unknown:     11.11%
@@ -141,7 +141,7 @@ In films directed by female Directors, the gender of the Composer attached to th
 That being said, there is a notable increase in the amount of female Composers represented here, and a decrease in the amount of male Composers, suggesting that there is a slight improvement in gender representation. 
 
 ### Bechdel Score Comparison by Director Gender
-![Bechdel Score Comparison](visuals/bechdel_score_comparison.png)
+![Bechdel Score Comparison](visualisations/5_BechdelScore.png)
 - - **Bechdel Score by Director Gender:**
   - Overall:            2.38 / 3.00
   - Male Directors:     2.29 / 3.00
@@ -152,7 +152,7 @@ Films directed by women scored higher than the overall average, whereas films di
 This shows how vital it is to reppresentation in storytelling that we increase the amount of female Directors moving forward.
 
 ### TMDB Score Comparison by Director Gender
-![TMDB Score Comparison](visuals/tmdb_score_comparison.png)
+![TMDB Score Comparison](visualisations/6_AvgScores.png)
 - **Average TMDB Score by Director Gender:**
   - Male Directors:     6.97 / 10.00
   - Female Directors:   7.27 / 10.00
